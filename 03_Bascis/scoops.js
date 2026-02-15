@@ -4,6 +4,8 @@ var c= 30
 // console.log(a);
 // console.log(b);
 // console.log(c);
+console.log("hello");
+
 
 // {} -> scoop
 if (true) {  // yahi scoop hai
