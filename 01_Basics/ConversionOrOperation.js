@@ -13,17 +13,18 @@ let value4 = Number(score4)
 
 console.log(typeof value1 ) // number -> 333
 console.log(typeof value2) // *  type is number but NaN(Not a Number )
+// In JavaScript, "Not a Number" is technically a numeric data type.
 
 console.log(value2) // NaN
 console.log(value3) // 0
 console.log(value4) // NaN
 /* true => 1 , false => 0
-  "yusuf"=> NaN */
+  Number("yusuf")=> NaN */
   
 let bool = 1
 let isboolean = Boolean(bool)
 console.log(isboolean) 
-/* 1 => true , 0 =>false 
+/* 1 => true , [0, null , undefined , NaN] =>false 
    "" => False , " AnyThing" => true */
 
 //String() => convert into string

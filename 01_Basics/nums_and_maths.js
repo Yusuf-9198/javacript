@@ -1,9 +1,13 @@
 // const score = 400
 // const balance = new Number(34) // (100% number hai) 
+// By using new Number(), you are creating a "Number Object" rather than a simple primitive
 // console.log(balance) // [Number: 34]
+
 // console.log(balance.toString()) // 34 (string hai)
 // console.log(balance.toString().length) // 2
-// console.log(balance.toFixed(3)) // 34.000(precision)
+// console.log(balance.toFixed(3)) // 34.000(precision) [looks at digits after the decimal point.]
+// While both(primitive and new Number()) allow you to use methods like .toFixed(), but
+// the object version consumes slightly more memory in the Heap.
 
 
 // const newNumber = 45.4344
@@ -11,6 +15,7 @@
 //       //(method) Number.toPrecision(precision?: number | undefined): string
 //       //Returns a string containing a number represented either in exponential or 
 //       // fixed-point notation with a specified number of digits.
+        // looks at the total number of significant digits (before and after the decimal).
 // const newNumber2 = 44635.4344
 // console.log(newNumber2.toPrecision(3)) // 4.46e+4 (3 digit and remaing in terms of exponent )
 
@@ -20,7 +25,7 @@
 // console.log(anynum.toLocaleString('en-IN')) //1,00,00,000(indian standard)
 
 // console.log(Number.MAX_VALUE) // 1.7976931348623157e+308
-// console.log(Number.MIN_VALUE)  // 5e-324
+// console.log(Number.MIN_VALUE)  // 5e-324 [smallest positive number closest to zero]
 
 // +++++++++++++++++++++ Maths +++++++++++++
 

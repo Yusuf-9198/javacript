@@ -1,4 +1,26 @@
 "use strict"; // treat all JS code as newer version
+// Using "use strict"; is a professional practice. 
+// It prevents you from using undeclared variables and makes your code more secure.
+/* How? 
+userName = "Yusuf"; // Works! JS creates a global variable automatically.
+01.
+userName = "Yusuf"; // Works! JS creates a global variable automatically.
+
+"use strict";
+userName = "Yusuf"; // ReferenceError: userName is not defined.
+
+02. Sometimes JavaScript fails to do something but doesn't tell you. 
+    Strict mode throws an error so you know exactly what went wrong.
+
+03. In normal JavaScript, if a function isn't part of an object, the this keyword points to the window (global object). 
+   This is a security risk because a script could accidentally modify your entire browser environment.
+
+In Strict Mode: this remains undefined in global functions. This protects the global scope from accidental changes.
+
+04. "use strict";
+let x = 3.14;
+delete x; // Error: Delete of an unqualified identifier in strict mode.
+ */
 // alert(5+7) // not use as it is(in NodeJs) but used in differnt way
 
 // also read from (https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -21,10 +43,10 @@ console.log(typeof(null))   // object
 
 /* Types of DataTypes
 
-01. Primitive { IT USE stack(copy of value ) MEOMORY TYPE}
+01. Primitive { IT USE stack(copy of value ) MEMORY TYPE}
    string, number , boolean, null , undefined, symbole ,Bigint
 
-02. Non primitive(refernce type){ IT USE heap MEOMORY TYPE}
+02. Non primitive(refernce type){ IT USE heap MEMORY TYPE}
    Array , Objects , Functions*/
 
 /*
